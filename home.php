@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <title>Auction System</title>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction System</title>
+    <link rel="icon" type="image/jpg" href="imgs/bid4ulogo.png"/>
     <link rel="stylesheet" href="">
     <script src=""></script>
     <style>
-
         body {
-
             font-family: Agency FB;
+            background-image: url("../imgs/backgroundbid4u.jpg");
         }
-
     </style>
 </head>
 <body>
@@ -21,6 +21,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="">Bid4u.Com</a>
+                <img src="imgs/bid4ulogo.png" alt="bid4u" />
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href=""><b>Home</b></a></li>
@@ -31,7 +32,6 @@
                     </ul>
                 </li>
             </ul>
-
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=""><b>About site</b></a></li>
                 <li><a href=""><b>Contact Us</b></a></li>

@@ -25,7 +25,7 @@
                 <img src="imgs/bid4ulogo.png" alt="bid4u" />
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home.php"><b>Home</b></a></li>
+                <li class="active"><a href="index.php"><b>Home</b></a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href=""><b>Products</b><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="mobile.php"><b>Mobile</b></a></li>

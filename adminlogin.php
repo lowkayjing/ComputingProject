@@ -27,7 +27,7 @@
             <a class="navbar-brand" href="#">Bid4u.Com</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="home.php"><b>Home</b></a></li>
+            <li><a href="index.php"><b>Home</b></a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Products</b><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="mobile.php"><b>Mobile</b></a></li>

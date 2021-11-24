@@ -7,18 +7,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Auction System</title>
         <meta name="description" content="">
         <meta name="google-signin-client_id" content="56071966215-ao2n2ocn1h3uumqolfp4f6264asj37fo.apps.googleusercontent.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
      
     <body>
       <div class="table-bkground"> </div>
       <div class="table">
-          <img src='bid4ulogo.png' id='logo'>
+          <img src='img/bid4ulogo.png' id='logo'>
           <br>
           <form action='check_login.php' class='login_form' method='POST'>
           <br>

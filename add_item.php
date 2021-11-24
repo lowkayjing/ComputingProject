@@ -1,7 +1,7 @@
 <html>
 <head><title></title>	
 
-<link rel="stylesheet" type="text/css" href="add.css">
+<link rel="stylesheet" type="text/css" href="css/add.css">
 	 	
 </head>
 
@@ -9,10 +9,11 @@
 <body>
 <header>
 <div class="navbar">
-  <img class='logo' src ='bid4ulogo.png'/>
+  <img class='logo' src ='img/bid4ulogo.png'/>
   <nav>
   <ul>
     <li><a href="home.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
     <li><a href="display_items.php">Buy</a></li>
     <li><a href="add_item.php">Sell</a></li>
 	<li><a href="logout.php" >Logout </a></li>
@@ -104,13 +105,13 @@ if(isset($_POST["insert"]))
 
 if(!empty($_POST["item_name"]) && !empty($_POST["item_description"]) && !empty($_POST["endtime"]) && !empty($_FILES["item_pic"]["name"]) && !empty($_POST["item_livestream"]))
 {
-		
-	
+
+
     $servername = "localhost";
     $username ="kaihong";
     $password = "kaihong20011212";
     $database = "bid4u_system_db";
-    
+
     $conn = new mysqli( $servername, $username, $password, $database);
 
 if($conn->connect_error)

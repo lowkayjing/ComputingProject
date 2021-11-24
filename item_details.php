@@ -1,7 +1,7 @@
 <html>
 <head><title></title>
 
-	 <link rel="stylesheet" type="text/css" href="display.css">
+	 <link rel="stylesheet" type="text/css" href="css/display.css">
 	
 </head>
 
@@ -12,7 +12,7 @@
 
 <header>
 <div class="navbar">
-  <img class='logo' src ='bid4ulogo.png'/>
+  <img class='logo' src ='img/bid4ulogo.png'/>
   <nav>
   <ul>
     <li><a href="">Home</a></li>

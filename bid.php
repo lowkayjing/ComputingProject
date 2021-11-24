@@ -1,13 +1,13 @@
 <html>
 <head><title></title>
 
- <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
 
 <?php
-echo "<img id='logo' src ='bid4ulogo.png'/>";
+echo "<img id='logo' src ='img/bid4ulogo.png'/>";
 echo "<br>";
 echo "<a href='logout.php' class='logout button'>Logout </a>";
     $servername = "localhost";

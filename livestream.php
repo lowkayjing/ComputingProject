@@ -21,11 +21,11 @@
             header("Location:display_items.php"); 
          }
          else
-         {  
-            $servername = "localhost";
-            $username ="kaihong";
-            $password = "kaihong20011212";
-            $database = "bid4u_system_db";
+         {
+             $servername = "localhost";
+             $username ="kaihong";
+             $password = "kaihong20011212";
+             $database = "bid4u_system_db";
             
             $conn = new mysqli( $servername, $username, $password, $database);
             

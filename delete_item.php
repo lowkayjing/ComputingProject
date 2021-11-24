@@ -1,7 +1,7 @@
 <html>
 <head><title></title>
 
-	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 	 </head>
 <body>
@@ -9,7 +9,7 @@
 <?php
 
 
-echo "<img id='logo' src ='bid4ulogo.png'/>";
+echo "<img id='logo' src ='img/bid4ulogo.png'/>";
 echo "<br>";
 echo "<form class='delete_item_form' action='check_delete_item.php' method='POST'>";
 	if(isset($_GET["item"]))

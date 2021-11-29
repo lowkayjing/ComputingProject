@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -18,19 +15,21 @@
     <body>
       <div class="table-bkground"> </div>
       <div class="table">
-          <img src='img/bid4ulogo.png' id='logo'>
+          <img src='img/bid4ulogo_edited.png' id='logo' class='center'>
           <br>
           <form action='check_login.php' class='login_form' method='POST'>
           <br>
-          <label for='username' class='label'> Username:</label>
+          <label for='username' class='label'> Username: </label>
+          <br>
           <input class='text' type='text' name='username' placeholder='Username'>
           <br>
-          <label for='password' class='label'>Password:</label>
+          <label for='password' class='label'>Password: </label>
+          <br>
           <input  class='password' type='password' name='password' placeholder='Password'>
           <br>
           <br>
           <input class='submit' type='submit' value='Sign in'/>
-          <p> or </p> <br>
+          <p> or </p> 
           <div class="g-signin2" data-onsuccess="onSignIn"></div>
           <p class="signup">
              Don't have an account ?

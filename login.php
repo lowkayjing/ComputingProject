@@ -28,24 +28,22 @@
           <input  class='password' type='password' name='password' placeholder='Password'>
           <br>
           <br>
-          <input class='submit' type='submit' value='Sign in'/>
+          <input class='submit' type='submit' value='SIGN IN'/>
           <p> or </p> 
           <div class="g-signin2" data-onsuccess="onSignIn"></div>
           <p class="signup">
-             Don't have an account ?
-             <a href="add_buyer.php">Sign Up.</a>
-         </p>
+            Don't have an account ?
+            <a href="add_buyer.php">Sign Up.</a>
+          </p>
           </form>
       </div>
       <script>
          function onSignIn(googleUser) {
-           // get user profile information
-           console.log(googleUser.getBasicProfile())
+          // get user profile information
+          console.log(googleUser.getBasicProfile())
          }
       </script>
 
-        
-        <script src="" async defer></script>
-    </body>
+      <script src="" async defer></script>
+  </body>
 </html>
-

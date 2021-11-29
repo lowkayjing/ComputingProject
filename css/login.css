@@ -1,49 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
-body, html {
-    height: 100%;
-  }
+
+body, html 
+{
+  height: 100%;
+}
   
-  * {
-    box-sizing: border-box;
-  }
+*
+{
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+ 
+.table-bkground 
+{
+  /* The image used */
+  background-image: url("../img/dark.jpg");
   
-  .table-bkground {
-    /* The image used */
-    background-image: url("../img/content.jpg");
-    /* background-color: yellow; */
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%;
+  width: 100%;
   
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+}
   
                 
-.table  {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-  }
+.table  
+{
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
 
-  .g-signin2
-  {
-    left: 50%;
-  }
- 
+a 
+{
+  color: rgb(255, 255, 255);
+}
+a:hover 
+{
+  color: #e6c15c;
+}
+
+input[type=text],
+input[type=password]
+{
+  text-align: center;
+  width:20%;
+  height:25px;
+  padding:5px;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button]{
+padding: 5px;
+background: linear-gradient(#ffffff 5%, #4b4b4b 100%);
+border: 3px solid #000000;
+color: #000000;
+cursor: pointer;
+width: 10%;
+border-radius: 5px;
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+font-weight:bold;
+font-size:15px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover{
+background: linear-gradient(#968a6a 5%, #e6c15c 100%);
+}
+
+.g-signin2
+{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+

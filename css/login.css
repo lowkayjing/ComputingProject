@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
-
 body, html 
 {
   height: 100%;
@@ -28,11 +27,9 @@ body, html
   width: 100%;
   
 }
-  
-                
+             
 .table  
 {
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -71,7 +68,7 @@ input[type=reset],
 input[type=button]{
 padding: 5px;
 background: linear-gradient(#ffffff 5%, #4b4b4b 100%);
-border: 3px solid #000000;
+border: 3px solid #888888;
 color: #000000;
 cursor: pointer;
 width: 10%;
@@ -85,13 +82,13 @@ font-size:15px;
 
 input[type=submit]:hover,
 input[type=reset]:hover,
-input[type=button]:hover{
-background: linear-gradient(#968a6a 5%, #e6c15c 100%);
+input[type=button]:hover
+{
+  background: linear-gradient(#968a6a 5%, #e6c15c 100%);
 }
 
 .g-signin2
 {
-  
   display: flex;
   align-items: center;
   justify-content: center

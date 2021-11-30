@@ -20,12 +20,11 @@ body, html
 .table-bkground 
 {
   /* The image used */
-  background-image: url("../img/dark.jpg");
-  
-  /* Full height */
+  background-image: url("../img/dark2.jpg");
   height: 100%;
   width: 100%;
-  
+  background-size: contain;
+  background-size: cover;
 }
              
 .table  
@@ -82,15 +81,14 @@ font-size:15px;
 
 input[type=submit]:hover,
 input[type=reset]:hover,
-input[type=button]:hover
-{
-  background: linear-gradient(#968a6a 5%, #e6c15c 100%);
+input[type=button]:hover{
+background: linear-gradient(#968a6a 5%, #e6c15c 100%);
 }
 
 .g-signin2
 {
+  
   display: flex;
   align-items: center;
   justify-content: center
 }
-

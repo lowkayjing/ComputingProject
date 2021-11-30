@@ -22,7 +22,7 @@ p
 {
     color: rgb(183, 221, 255);
     font-family: 'Courier New', monospace;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center; 
 }
 
@@ -52,6 +52,15 @@ h3
 }
 
 div.footer_bottom
+{
+    font-family: "Fantasy", Papyrus, Fantasy;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+div.footer-box
 {
     font-family: "Fantasy", Papyrus, Fantasy;
     position: sticky;

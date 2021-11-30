@@ -1,28 +1,29 @@
 <html>
-<head><title></title> 
- 
+<head><title>Auction Sytem</title>
 
- <link rel="stylesheet" type="text/css" href="css/display.css">
- 
+
+    <link rel="stylesheet" type="text/css" href="css/display.css">
+
 </head>
 
 <body>
 <script src="JS/display.js"> </script>
 <header>
-<div class="navbar">
-  <img class='logo' src ='img/bid4ulogo.png'/>
-  <nav>
-  <ul>
-      <li><a href="home.php">Home</a></li>
-      <li><a href="about.php">About</a></li>
-    <li><a href="display_items.php">Buy</a></li>
-    <li><a href="add_item.php">Sell</a></li>
-      <li><a href="contact.php">Contact</a></li>
-	<li><a href="logout.php" >Logout </a></li>
-  </ul>
-</nav>
-</div>
+    <div class="navbar">
+        <img class='logo' src ='img/bid4ulogo.png'/>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="display_items.php">Buy</a></li>
+                <li><a href="add_item.php">Sell</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="logout.php" >Logout </a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
 <?php 
 
 session_start();
@@ -65,6 +66,8 @@ $result = $conn->query($statement);
               $link = "item_details.php?item_id=";
              $item_details = $link.$iid;
              ?> 
+             <div class="table-bkground"> 
+                 
             <div class="item">
             <div class="item_row">Item Name: <?php echo $row["item_name"] ?> </div>
             <img class="item_img" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row["item_pic"]); ?>"/>
@@ -85,6 +88,7 @@ $result = $conn->query($statement);
 $conn->close();
 }/*prevent direct access by user*/
 ?>
+
 <footer class="footer-box">
     <div class="container">
         <div class="row">

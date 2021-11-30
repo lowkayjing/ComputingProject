@@ -117,6 +117,17 @@
                 </div>
             </div>
         </div>
+        <!--Begin : Page FOOTER -->
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="crp">Copyright 2021 © Bid4u.Com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End : Page FOOTER -->
 
     </body>
 </html>

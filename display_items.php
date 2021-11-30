@@ -37,8 +37,8 @@ else
 {
 
     $servername = "localhost";
-    $username ="kaihong";
-    $password = "kaihong20011212";
+    $username ="ZeMin";
+    $password = "jLZM030508";
     $database = "bid4u_system_db";
 
     $conn = new mysqli( $servername, $username, $password, $database);
@@ -89,36 +89,36 @@ $conn->close();
 }/*prevent direct access by user*/
 ?>
 
+
 <footer class="footer-box">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="full">
-                    <div class="heading_main text_align_center white_fonts margin-bottom_30">
-                        <h3>Contact Us</h3>
+                <div class="heading_main text_align_center white_fonts margin-bottom_30">
+                
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="margin-left:35px;">
             <div class="col-lg-3 col-md-6 col-sm-6 white_fonts">
-                <p>
-                    Address <br/>
-                    <small>
-                        1, Jalan Taylors,<br/>
-                        47500 Subang Jaya, Selangor.<br/>
-                    </small>
-                </p>
+                
             </div>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 white_fonts">
-            <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
+            
         </div>
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-6 white_fonts">
+    <h3>Contact Us</h3>
+    <p> Address <br/>
+    <small>1, Jalan Taylors,<br/>
+    47500 Subang Jaya, Selangor.<br/>
+    </small></p>
+    <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
         <p>Email<br><small>Bid4u@outlook.com</small></p>
     </div>
     </div>
@@ -126,7 +126,7 @@ $conn->close();
     </div>
 </footer>
 <!--Begin : Page FOOTER -->
-<div class="footer_bottom">
+
     <div class="container">
         <div class="row">
             <div class="col-12">

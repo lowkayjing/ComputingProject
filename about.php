@@ -3,30 +3,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/display.css">
-    <style>
-        body {
-            font-family: Agency FB;
-        }
-        .font{
-            font-family: Agency FB;
-            font-size:20px;
-        }
-        .modal-header
-        {
-            padding:9px 15px;
-            border-bottom:1px solid #eee;
-            background-color: #A9A9A9;
-        }
-        .modal-footer
-        {
-            background-color: #A9A9A9;
-        }
-        .modal-body
-        {
-            background-color: #324669;
-            color: white;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -45,12 +22,13 @@
         </nav>
     </div>
 </header>
+<div class="table-bkground"> 
+<div class="table">
 <div class="container">
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 style="text-align: center" class="modal-title"><b>Online Auction System</b></h2>
                 </div>
                 <div class="modal-body">
 

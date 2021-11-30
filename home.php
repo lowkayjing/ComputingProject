@@ -129,7 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-6 white_fonts">
-        <p>Email<br><small>applications@taylors.edu.my</small></p>
+        <p>Email<br><small>Bid4u@outlook.com</small></p>
     </div>
     </div>
     </div>

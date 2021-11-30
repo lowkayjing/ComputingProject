@@ -33,6 +33,7 @@ if (isset($_GET['message'])) {
 if (isset($_GET['loginmessage'])) {
     print '<script type="text/javascript">alert("' . $_GET['loginmessage'] . '");</script>';
 }
+    
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")

@@ -53,8 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             <table>
                 <?php
                 $servername = "localhost";
-                $username ="ZeMin";
-                $password = "jLZM030508";
+                $username ="kaihong";
+                $password = "kaihong20011212";
                 $database = "bid4u_system_db";
 
                 $conn = new mysqli( $servername, $username, $password, $database);

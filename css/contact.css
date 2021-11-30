@@ -18,23 +18,12 @@ body
  font-weight: 300;
 }
 
-h2
-{
-    color: rgb(183, 221, 255);
-    font-family: 'Courier New', monospace;
-    font-size: 20px;
-    text-align: center;
-}
-
 h3
 {
     color: rgb(183, 221, 255);
     font-family: 'Courier New', monospace;
     font-size: 20px;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 50px;
 }
 
 .navbar 
@@ -98,7 +87,6 @@ nav a
     text-transform: uppercase;
 }
 
-
 nav a:hover
 {
     color:yellow;
@@ -131,43 +119,37 @@ nav a:hover::before
   }
   
 
-  .item
+  .table  
 {
-	border: 1px solid gray;
-	display: inline-block;
-	margin: 5px;
-	width: 200px;
-    color:rgb(255, 255, 255);
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+ width: 100%;
+ padding: 5px;
+ text-align: center;
 }
 
-.item_row
-{	border-top: 1px solid gray;
- 
-	width: 100%;
+.lable
+{
+    color: white;
+    font-size: 5px;
+    text-align: center;
 }
 
-
-
-.item_img
+input[type=text],
+input[type=email]
 {
-	
-	height: 150px;
-	width: 150px;
-}
-
-.table  
-{
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 100%;
-  padding: 5px;
   text-align: center;
+  width:20%;
+  height:25px;
+  padding:5px;
+  margin-top:5px;
+  margin-bottom:10px;
 }
 
 input[type=submit],
@@ -192,3 +174,6 @@ input[type=reset]:hover,
 input[type=button]:hover{
 background: linear-gradient(#968a6a 5%, #e6c15c 100%);
 }
+
+
+

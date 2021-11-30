@@ -1,5 +1,5 @@
 <html>
-<head><title></title>
+<head><title>Auction Sytem</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/display.css">
@@ -23,6 +23,8 @@
         </nav>
     </div>
 </header>
+<div class="table-bkground"> 
+<div class="table">
 <?php
 if (isset($_GET['message'])) {
     print '<script type="text/javascript">alert("' . $_GET['message'] . '");</script>';
@@ -31,6 +33,7 @@ if (isset($_GET['message'])) {
 if (isset($_GET['loginmessage'])) {
     print '<script type="text/javascript">alert("' . $_GET['loginmessage'] . '");</script>';
 }
+    
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -50,8 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             <table>
                 <?php
                 $servername = "localhost";
-                $username ="kaihong";
-                $password = "kaihong20011212";
+                $username ="ZeMin";
+                $password = "jLZM030508";
                 $database = "bid4u_system_db";
 
                 $conn = new mysqli( $servername, $username, $password, $database);

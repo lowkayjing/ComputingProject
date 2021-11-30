@@ -11,7 +11,7 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
-     
+
     <body>
       <div class="table-bkground"> </div>
       <div class="table">
@@ -29,7 +29,7 @@
           <br>
           <br>
           <input class='submit' type='submit' value='SIGN IN'/>
-          <p> or </p> 
+          <p> or </p>
           <div class="g-signin2" data-onsuccess="onSignIn"></div>
           <p class="signup">
             Don't have an account ?

@@ -15,6 +15,7 @@
       <li><a href="about.php">About</a></li>
     <li><a href="display_items.php">Buy</a></li>
     <li><a href="add_item.php">Sell</a></li>
+      <li><a href="contact.php">Contact</a></li>
 	<li><a href="logout.php" >Logout </a></li>
   </ul>
 </nav>

@@ -1,6 +1,6 @@
 <html>
 <head><title>Auction System</title>
-    <link rel="stylesheet" type="text/css" href="css/display.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
    
 </head>
 <body>

@@ -125,7 +125,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="crp">Copyright 2021 © Bid4u.Com</p>
                 <h3>Contact Us</h3>
     <p> Address <br/>
     <small>1, Jalan Taylors,<br/>
@@ -133,6 +132,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     </small></p>
     <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
     <p>Email<br><small>Bid4u@outlook.com</small></p>
+    <br>
+    <p class="crp">Copyright 2021 © Bid4u.Com</p>
             </div>
         </div>
     </div>

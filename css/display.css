@@ -60,13 +60,55 @@ div.footer_bottom
     color: white;
 }
 
-div.footer-box
-{
-    font-family: "Fantasy", Papyrus, Fantasy;
-    position: sticky;
+.footer-box {
+    background: #2196f3;
+    padding: 0px 0 20px 0;
+}
+
+footer {
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    float: left;
+}
+
+footer.footer-box .heading_main h3
+{
+    border-bottom: solid #fff 1px;
+    font-size: 30px;
+    padding: 0 0 30px 0;
+    text-transform: none;
+    width: 100%;
+}
+
+footer.footer-box h3
+{
+    font-weight: 300;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+footer.footer-box p
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 28px;
+    color: #ffffff !important;
+    width: 100%;
+}
+
+.footer_blog {
+    padding-left: 45px;
+    float: left;
+    width: 100%;
+}
+
+.margin-bottom_30 {
+    margin-bottom: 30px !important;
+}
+
+.text_align_center {
+    text-align: center;
 }
 
 header

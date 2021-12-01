@@ -36,12 +36,12 @@ if(!isset($_SESSION["username"]))
 else
 {
 
-$servername = "localhost";
-$username ="kaihong";
-$password = "kaihong20011212";
-$database = "bid4u_system_db";
+    $servername = "localhost";
+    $username ="ZeMin";
+    $password = "jLZM030508";
+    $database = "bid4u_system_db";
 
-$conn = new mysqli( $servername, $username, $password, $database);
+    $conn = new mysqli( $servername, $username, $password, $database);
 
 
     if($conn->connect_error)
@@ -113,13 +113,6 @@ $conn->close();
     </div>
 
     <div class="col-lg-3 col-md-6 col-sm-6 white_fonts">
-    <h3>Contact Us</h3>
-    <p> Address <br/>
-    <small>1, Jalan Taylors,<br/>
-    47500 Subang Jaya, Selangor.<br/>
-    </small></p>
-    <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
-        <p>Email<br><small>Bid4u@outlook.com</small></p>
     </div>
     </div>
     </div>
@@ -131,6 +124,13 @@ $conn->close();
         <div class="row">
             <div class="col-12">
                 <p class="crp">Copyright 2021 © Bid4u.Com</p>
+                <h3>Contact Us</h3>
+    <p> Address <br/>
+    <small>1, Jalan Taylors,<br/>
+    47500 Subang Jaya, Selangor.<br/>
+    </small></p>
+    <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
+        <p>Email<br><small>Bid4u@outlook.com</small></p>
             </div>
         </div>
     </div>

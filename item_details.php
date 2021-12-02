@@ -1,7 +1,7 @@
 <html>
 <head><title></title>
 
-	 <link rel="stylesheet" type="text/css" href="css/display.css">
+	 <link rel="stylesheet" type="text/css" href="CSS/display.css">
 	
 </head>
 
@@ -10,19 +10,7 @@
 	
 <body>
 
-<header>
-<div class="navbar">
-  <img class='logo' src ='img/bid4ulogo.png'/>
-  <nav>
-  <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="display_items.php">Buy</a></li>
-    <li><a href="add_item.php">Sell</a></li>
-	<li><a href="logout.php" >Logout </a></li>
-  </ul>
-</nav>
-</div>
-</header>
+
 <?php
  
 session_start();
@@ -31,19 +19,37 @@ session_start();
 
 if(!isset($_GET["item_id"]) || !isset($_SESSION["username"]))
 {
-header("Location:display_items.php"); 
+header("Location:login.php"); 
 }
 
 
 else
 {
+?>
+<header>
+<div class="navbar">
+  <img class='logo' src ='img/bid4ulogo.png'/>
+  <nav>
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="display_items.php">Products</a></li>
+    <li><a href="cart.php">Cart</a></li>
+    <li><a href="contact.php">Contact</a></li>
+    <li><a href="about.php">About</a></li>
+    <li><a href="#"> Hello <?php echo $_SESSION["username"]?> </a></li>  
+  	<li><a href="logout.php" >Logout </a></li>
+  </ul>
+</nav>
+</div>
+</header>
+<?php
+$servername = '192.168.64.3';
+$username = 'kate';
+$password = 'Jing@0220';
+$database = 'bid4u_system_db';
+$port = 3306;
 
-$servername = "localhost";
-$username ="kaihong";
-$password = "kaihong20011212";
-$database = "bid4u_system_db";
-
-$conn = new mysqli( $servername, $username, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $database, $port);
 
 if($conn->connect_error)
 {
@@ -58,8 +64,8 @@ $stmt = $conn->prepare($statement);
 $stmt->bind_param("s", $iid);
 $stmt->execute();
 $result = $stmt->get_result();
-$row = $result->fetch_assoc(); /*select the data of the specific item from the ITEM table*/
-
+while($row = $result->fetch_assoc()) /*select the data of the specific item from the ITEM table*/
+{
 
 $iid = $row["item_id"];
 $iname= $row["item_name"];
@@ -79,7 +85,9 @@ $ilivestream = $row["item_livestream"];
 <div class='item_row'>Item Description: <?php echo $i_desc ?></div>
 <div class='item_row'>End Time: <?php echo $end ?></div>
 <div class='item_row'>Number Of Bids:<?php echo $bid_num ?></div>
+<div class='item_row'>Initial Price: <?php echo $iiprice ?></div>
 <div class='item_row'>Current Bid: <?php echo $icprice ?></div>
+
 <form action='bid.php' method='POST'>
 <input type='hidden' value="<?php echo $iid; ?>" name='item_id'/>
 <input type='hidden' value="<?php echo $username; ?>" name='username'>
@@ -87,8 +95,8 @@ $ilivestream = $row["item_livestream"];
 <?php 
 for($i=0; $i < 10; $i++)
 {
- $j = $i*10;
-echo "<option value='$j'>$$j</option>";
+ $iiprice = $iiprice + 100;
+echo "<option value='$iiprice'>$$iiprice</option>";
 }
 echo "</select>";	
 echo "<input type='submit' value='Bid'>";
@@ -96,7 +104,7 @@ echo "</form>";
 echo "</div>"; 
  
 $conn->close(); /*display the item details */ 
- 
+}
 }/*prevent direct access by user */
 
 	

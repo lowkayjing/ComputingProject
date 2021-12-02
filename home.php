@@ -52,13 +52,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
             <table>
                 <?php
-                $servername = "localhost";
-                $username ="ZeMin";
-                $password = "jLZM030508";
-                $database = "bid4u_system_db";
+                $servername = '192.168.64.3';
+                $username = 'kate';
+                $password = 'Jing@0220';
+                $database = 'bid4u_system_db';
+                $port = 3306;
 
-                $conn = new mysqli( $servername, $username, $password, $database);
-
+                $conn = mysqli_connect($servername, $username, $password, $database, $port);
 
                 if($conn->connect_error)
                 {

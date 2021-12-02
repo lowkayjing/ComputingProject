@@ -1,7 +1,7 @@
 <html>
 <head><title></title>
 
-	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -10,19 +10,17 @@
 
 if(!empty($_POST["username"]) && !empty($_POST["password"]))
 {
-    $servername = "localhost";
-    $username ="kaihong";
-    $password = "kaihong20011212";
-    $database = "bid4u_system_db";
+    $servername = '192.168.64.3';
+    $username = 'kate';
+    $password = 'Jing@0220';
+    $database = 'bid4u_system_db';
+    $port = 3306;
 
-    $conn = new mysqli( $servername, $username, $password, $database);
-
-
-
-    if($conn->connect_error)
-    {
-        die("Connection failed!".$conn->connect_error);
-    }
+    $conn = mysqli_connect($servername, $username, $password, $database, $port);
+if($conn->connect_error)
+{
+die("Connection failed!".$conn->connect_error);
+}
  
 $username = $_POST["username"];
 $statement = "SELECT * FROM buyer WHERE username=?";

@@ -36,17 +36,15 @@ if(!isset($_SESSION["username"]))
 else
 {
 
-$servername = "localhost";
-$username ="kaihong";
-$password = "kaihong20011212";
-$database = "bid4u_system_db";
+    $servername = "localhost";
+    $username ="ZeMin";
+    $password = "jLZM030508";
+    $database = "bid4u_system_db";
 
-$conn = new mysqli( $servername, $username, $password, $database);
-
-
+    $conn = new mysqli( $servername, $username, $password, $database);
 
 
-if($conn->connect_error)
+    if($conn->connect_error)
     {
         die("Connection failed!".$conn->connect_error);
     }
@@ -125,7 +123,6 @@ $conn->close();
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="crp">Copyright 2021 © Bid4u.Com</p>
                 <h3>Contact Us</h3>
     <p> Address <br/>
     <small>1, Jalan Taylors,<br/>
@@ -133,6 +130,8 @@ $conn->close();
     </small></p>
     <p>Phone<br><small>03-5629 5000<br>Monday - Friday<br>8:00 am - 6:00 pm</small></p>
         <p>Email<br><small>Bid4u@outlook.com</small></p>
+        <br>
+    <p class="crp">Copyright 2021 © Bid4u.Com</p>
             </div>
         </div>
     </div>

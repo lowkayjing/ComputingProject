@@ -135,3 +135,10 @@ nav a:hover::before
 	clear: both;
 	margin: 38px 0px;
 }
+
+p
+{
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    text-align: center;
+}

@@ -97,6 +97,13 @@ nav a:hover::before
 
 }
 
+p
+{
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
 .prod-info-main {
     border: 1px solid #CEEFFF;
     margin-bottom: 20px;

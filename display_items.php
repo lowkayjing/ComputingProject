@@ -179,5 +179,6 @@ $conn->close();
         
 </div>
 </div>
+<p class="crp">Copyright 2021 © Bid4u.Com</p>
 </body>
 </html>

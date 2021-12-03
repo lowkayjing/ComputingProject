@@ -1,13 +1,13 @@
 <html>
 <head><title></title>
 
- <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+ <link rel="stylesheet" type="text/css" href="CSS/display.css">
 
 </head>
 <body>
 <header>
 <div class="navbar">
-    <img class='logo' src ='bid4ulogo.png'/>
+    <img class='logo' src ='img/bid4ulogo.png'/>
     <nav>
         <ul>
              <li><a href="">Home</a></li>
@@ -21,12 +21,13 @@
 </div>
 </header>
 <?php
-    $servername = "localhost";
-	$username ="kaihong";
-	$password = "kaihong20011212";
-	$database = "bid4u_system_db";
-	
-	$conn = new mysqli( $servername, $username, $password, $database);
+$servername = '192.168.64.3';
+$username = 'kate';
+$password = 'Jing@0220';
+$database = 'bid4u_system_db';
+$port = 3306;
+
+$conn = mysqli_connect($servername, $username, $password, $database, $port);
 
 if($conn->connect_error)
 {

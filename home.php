@@ -13,12 +13,12 @@
         <img class='logo' src ='img/bid4ulogo.png'/>
         <nav>
             <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="display_items.php">Buy</a></li>
-                <li><a href="add_item.php">Sell</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="display_items.php">Products</a></li>
+                <li><a href="cart.php">Cart</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="logout.php" >Logout </a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="logout.php">Logout </a></li>
             </ul>
         </nav>
     </div>

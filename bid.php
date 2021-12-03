@@ -1,25 +1,9 @@
 <html>
 <head><title></title>
-
- <link rel="stylesheet" type="text/css" href="CSS/display.css">
-
+<link rel="stylesheet" type="text/css" href="CSS/display.css">
 </head>
 <body>
-<header>
-<div class="navbar">
-    <img class='logo' src ='img/bid4ulogo.png'/>
-    <nav>
-        <ul>
-             <li><a href="">Home</a></li>
-             <li><a href="display_items.php">Products</a></li>
-             <li><a href="cart.php">Cart</a></li>
-             <li><a href="contact.php">Contact</a></li>
-             <li><a href="about.php">About</a></li>
-             <li><a href="logout.php" >Logout </a></li>
-        </ul>
-    </nav>
-</div>
-</header>
+
 <?php
 $servername = "localhost";
 $username ="kaihong";
@@ -32,7 +16,7 @@ if($conn->connect_error)
 {
 die("Connection failed!".$conn->connect_error);
 }
-
+session_start();
  
 if(!isset($_POST["item_id"]))
 {
@@ -42,19 +26,35 @@ header("Location: display_items.php");
 
 else
 {
-
-session_start();
+?>
+<header>
+<div class="navbar">
+    <img class='logo' src ='img/bid4ulogo.png'/>
+    <nav>
+        <ul>
+             <li><a href="">Home</a></li>
+             <li><a href="display_items.php">Products</a></li>
+             <li><a href="cart.php">Cart</a></li>
+             <li><a href="contact.php">Contact</a></li>
+             <li><a href="about.php">About</a></li>
+             <li><a href="#"> Hello <?php echo $_SESSION["username"]?> </a></li>  
+             <li><a href="logout.php" >Logout </a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<?php
 $item_id = $_POST["item_id"];
-$statement = "SELECT * FROM bid WHERE item_id=?";
-$stmt = $conn->prepare($statement);
-$stmt->bind_param("s", $item_id);
-$stmt->execute();
-$result = $stmt->get_result();
-$row = $result->fetch_assoc();
-
+$statement = " SELECT * FROM bid WHERE item_id=?";
+$stmt = $conn-> prepare($statement);
+$stmt-> bind_param("s", $item_id);
+$stmt-> execute();
+$result = $stmt-> get_result();
+ while($row = $result->fetch_assoc())
+{
 if($_SESSION["username"] ==  $row["username"])
 {
-echo "You are already the highest bidder";
+$row["username"] = $username;
 $statement = "SELECT * FROM item WHERE item_id = '$item_id'";
 $result = $conn->query($statement);
 $row = $result->fetch_assoc();
@@ -69,11 +69,19 @@ if($strcurrenttime > $strsettime)
 $sql = "UPDATE item SET item_visible ='FALSE' WHERE item_id = '$item_id'";
 $results = mysqli_query($conn, $sql);
 }
-$winner="winner";
- header("Location:display_items.php?user=$winner");
 
-} /*checks if user is already highest bidder*/
-
+} 
+} /*set the product visible to false when current time has greater than product endtime  */
+$statement = " SELECT * FROM bid WHERE item_id=?";
+$stmt = $conn-> prepare($statement);
+$stmt-> bind_param("s", $item_id);
+$stmt-> execute();
+$result = $stmt-> get_result();
+$row = $result->fetch_assoc();
+if($_SESSION["username"] == $row["username"] )
+{
+    echo "You are already the highest bidder";
+}  /*checks if user is already highest bidder*/ 
 else
 {
 $statement = "SELECT * FROM item WHERE item_id=?";   // updates the number of bids
@@ -112,7 +120,7 @@ $stmt = $conn->prepare($statement);
 $stmt->bind_param("dd", $bid, $item_id);
 $stmt->execute();
 
-echo "Congratulations, the current bid value is $".$bid. "and you currently is the highest bidder";
+echo "Congratulations, the current bid value is $".$bid. " and you currently is the highest bidder";
 $stmt->close();
 
 }/*inserts a new bid into the BID table and deletes older ones*/

@@ -4,7 +4,12 @@
 2. Create a database with name bid4u_system_db
 3. Import bid4u_system_db.sql
 
-## Login Details for buyer
+## Login Details for admin
 
 Username: Hong
 Password: 20011212
+
+## Login Details for buyer
+
+Username: Kate
+Password: Kate@12345
